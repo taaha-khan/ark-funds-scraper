@@ -76,6 +76,9 @@ def getStock(link):
 	values.remove('INC')
 	values[1] = 'TESLA INC'
 
+	# Closing Driver
+	driver.close()
+
 	# Returning Data
 	return [link] + [date] + values
 
